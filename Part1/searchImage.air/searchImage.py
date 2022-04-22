@@ -29,7 +29,7 @@ path = os.path.abspath(".") + "/config.ini"
 config.read(path,encoding="utf-8")
 visit_result = int(config.get("ImageLocation","VISIT_RESULT")) - 1
 
-#find the image by using config file value,use image lotus.jpeg
+#find the image by using config file value,use image lotus.jpg
 driver.get(url)
 driver.find_element_by_xpath("//img[@class='st_camera_off']").click()
 driver.find_element_by_id("uploadImg").click()
