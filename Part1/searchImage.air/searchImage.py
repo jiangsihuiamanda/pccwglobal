@@ -72,7 +72,7 @@ img1_finger = np.where(img1 > img1_mean, 1, 0)
 img2 = cv2.imread(imageName)
 img2 = cv2.resize(img2,(8,8), interpolation=cv2.INTER_CUBIC)
 img2 = cv2.cvtColor(img2, cv2.COLOR_BGR2GRAY)
-img2_sum = np.sum(img1)
+img2_sum = np.sum(img2)
 img2_mean = img2_sum / 64
 img2_finger = np.where(img2 > img2_mean, 1, 0)
 
